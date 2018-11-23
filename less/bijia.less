@@ -1,0 +1,150 @@
+@import "normalize";
+@import "base";
+@import "vairable";
+
+
+.mmb_bijia {
+
+    // 面包屑导航
+    .title {
+        height: 75rem/@base;
+        background-image: linear-gradient(to bottom, #fefefe, #ececec);
+        border-bottom: 1rem/@base solid #d4d4d4;
+        border-top: 1rem/@base solid #d4d4d4;
+        padding: 0 15rem/@base;
+        font-size: 25rem/@base;
+        .three {
+            height: 100%;
+            line-height: 75rem/@base;            
+        }
+
+        .btn {
+            width: 125rem/@base;
+            height: 60rem/@base;
+        
+            .select {
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to bottom, #dadada, #fafafa);
+                border: 1rem/@base solid #d4d4d4;
+                box-shadow: 1rem/@base 2rem/@base 3rem/@base #ccc;
+                border-radius: 10rem/@base;
+                // line-height: 60rem/@base;
+                margin-top: 8rem/@base;
+                text-align: center;
+                font-size: 25rem/@base;
+                padding: 0;
+            }
+        }
+    }
+
+    .desc {
+        height: 505rem/@base;
+        background-color: #fff;
+        padding: 40rem/@base;
+        text-align: center;
+        position: relative;
+        h3 {
+            font-size: 35rem/@base;
+            margin: 0;
+            line-height: 40rem/@base;
+        }
+        img {
+            width: 300rem/@base;
+            height: 300rem/@base;
+            margin: 0 auto;
+        }
+        .collect {
+            width: 80rem/@base;
+            height: 80rem/@base;
+            border-radius: 50%;
+            background-color: #95d800;
+            color: #fff;
+            text-align: center;
+            line-height: 80rem/@base;
+            padding: 0;
+            font-size: 25rem/@base;
+            text-shadow: 2rem/@base 2rem/@base 5rem/@base #333;
+            position: absolute;
+            bottom: 40rem/@base;
+            right: 40rem/@base;
+        }
+    }
+
+    .function {
+        height: 65rem/@base;
+        border-top: 1rem/@base solid #b52a00;
+        border-bottom: 1rem/@base solid #b52a00;
+        div {
+            height: 100%;
+            line-height: 65rem/@base;
+            text-align: center;
+            font-size: 30rem/@base;
+            color: #fff;
+            width: 33.3%;
+            float: left;
+            background-image: linear-gradient(to bottom, #ffce48, #ffbf0a);
+            border-right: 1rem/@base solid #b52a00;
+        }
+        div:last-child {
+            border-right: none;            
+        }
+        .active {
+            background-image: linear-gradient(to bottom, #ffa42e, #ff9307);
+        }
+    }
+
+    // 去购买
+    .goShop {
+
+        .shopTop {
+            height: 90rem/@base;
+            line-height: 90rem/@base;
+            background-color: #fff;
+            position: relative;
+            padding-left: 60rem/@base;
+            padding-right: 10rem/@base;
+            font-size: 30rem/@base;
+            border-bottom: 2rem/@base solid #b2b2b2;
+            .p_pic {
+                width: 34rem/@base;
+                height: 34rem/@base;
+                position: absolute;
+                top: 50%;
+                left: 14rem/@base;
+                transform: translateY(-50%);
+            }
+            .red {
+                color: red;
+                position: absolute;
+                top: 50%;
+                right: 150rem/@base;
+                transform: translateY(-50%);
+
+            }
+        }
+
+        .bottom {
+            height: 115rem/@base;
+            background-color: #fff;
+            color: #b2b2b2;
+            line-height: 40rem/@base;
+            text-align: center;
+            font-size: 22rem/@base;
+            padding:20rem/@base 40rem/@base 0 20rem/@base;
+        }
+    }
+
+    // 评论
+    .mmb_evaluate {
+        border-top: 4rem/@base solid #6e6e6e;
+        height: 1000rem/@base;
+        .evaTop {
+            height: 70rem/@base;
+            text-align: center;
+            font-size: 25rem/@base;
+            width: 100%;
+            background-color: #dbdbdb;
+        }
+    }
+}
