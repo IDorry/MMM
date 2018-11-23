@@ -1,0 +1,330 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', sans-serif;
+  background-color: #f5f5f5;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+ul,
+ol {
+  list-style: none;
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+img {
+  display: block;
+  width: 100%;
+}
+button,
+input {
+  border: none;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  margin: 0 auto;
+}
+.mmb_header {
+  height: 1.2rem;
+  background-color: #ff841d;
+  overflow: hidden;
+}
+.mmb_header .logo {
+  padding: 0.26666667rem;
+}
+.mmb_header .logo img {
+  height: 0.66666667rem;
+  width: auto;
+}
+.mmb_header .app {
+  padding: 0.16rem;
+}
+.mmb_header .app img {
+  height: 0.90666667rem;
+  width: 0.90666667rem;
+}
+.mmb_search {
+  height: 1.37333333rem;
+  background-color: #fff;
+  margin-bottom: 0.26666667rem;
+  padding: 0.26666667rem;
+}
+.mmb_search .input {
+  width: 6.66666667rem;
+  height: 0.8rem;
+}
+.mmb_search .input input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  border-radius: 0.4rem;
+  padding: 0;
+  padding-left: 0.53333333rem;
+  text-align: left;
+  font-size: 0.32rem;
+}
+.mmb_search .button {
+  height: 0.8rem;
+  width: 1.66666667rem;
+}
+.mmb_search .button input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+  background-color: #ff841d;
+  color: #fff;
+  text-align: center;
+  font-size: 0.32rem;
+  padding: 0;
+}
+.mmb_footer .top {
+  border-top: 0.01333333rem solid #c4c4c4;
+  text-align: center;
+  overflow: hidden;
+}
+.mmb_footer .top a {
+  display: block;
+  float: left;
+  width: 33.3%;
+  height: 0.90666667rem;
+  border-right: 0.01333333rem solid #c4c4c4;
+  line-height: 0.90666667rem;
+  font-size: 0.33333333rem;
+  position: relative;
+}
+.mmb_footer .top a .img {
+  position: absolute;
+  top: 0.24rem;
+  left: 0.46666667rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-image: url(../images/top.jpg);
+  background-size: 0.4rem 0.4rem;
+}
+.mmb_footer .top .toTop {
+  border-right: none;
+}
+.mmb_footer .bottom {
+  border-top: 0.01333333rem solid #c4c4c4;
+  padding: 0.2rem 0;
+  text-align: center;
+}
+.mmb_footer .bottom .downApp .colred {
+  color: red;
+}
+.mmb_footer .bottom .col666 {
+  color: #666;
+}

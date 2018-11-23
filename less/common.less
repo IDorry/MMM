@@ -1,0 +1,134 @@
+@import "normalize";
+@import "base";
+@import "vairable";
+
+
+button, input {
+    border: none;    
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+}
+
+// 头部
+.mmb_header {
+    height: 90rem/@base;
+    background-color: @mainColor;
+    overflow: hidden;
+
+    .logo {
+        padding: 20rem/@base;
+        img {
+            height: 50rem/@base;
+            width: auto;
+        }
+    }
+
+    .app {        
+        padding: 12rem/@base;
+        img {
+            height: 68rem/@base;
+            width: 68rem/@base;
+        }
+    }
+}
+
+// 搜索
+.mmb_search {
+    height: 103rem/@base;
+    background-color: #fff;
+    margin-bottom: 20rem/@base;
+    padding: 20rem/@base;
+
+    .input {
+        
+        width: 500rem/@base;
+        height: 60rem/@base;
+        input {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #f1f1f1;
+            border-radius: 30rem/@base;
+            padding: 0;
+            padding-left: 40rem/@base;
+            text-align: left;
+            font-size: 24rem/@base;
+        }
+    }
+    .button {
+        height: 60rem/@base;        
+        width: 125rem/@base;
+        input {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 30rem/@base;
+            background-color: @mainColor;
+            color: #fff;
+            text-align: center;
+            font-size: 24rem/@base;
+            padding: 0;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+// 底部
+.mmb_footer {
+    .top {
+        border-top: 1rem/@base solid #c4c4c4;
+        text-align: center;
+        overflow: hidden;
+        a {
+            display: block;
+            float: left;
+            width: 33.3%;
+            height: 68rem/@base;
+            border-right: 1rem/@base solid #c4c4c4;
+            line-height: 68rem/@base;
+            font-size: 25rem/@base;
+            position: relative;
+            .img {
+                position: absolute;
+                top:18rem/@base;
+                left: 35rem/@base;
+                width: 30rem/@base;
+                height: 30rem/@base;
+                background-image: url(../images/top.jpg);
+                background-size: 30rem/@base 30rem/@base;
+            }
+        }
+        .toTop {
+            border-right: none;
+        }
+    }
+
+    .bottom {
+        border-top: 1rem/@base solid #c4c4c4;
+        padding: 15rem/@base 0;
+        text-align: center;
+        .downApp {
+    
+          .colred {
+            color: red;
+          }
+        }
+        .col666{
+          color: #666;
+        }
+      }
+}
+
+

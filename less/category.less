@@ -1,0 +1,49 @@
+@import "normalize";
+@import "base";
+@import "vairable";
+
+// 分类列表
+.mmb_category {
+    background-color: #ededed;
+    border-top: 1rem/@base solid #ccc;
+    border-bottom: 1rem/@base solid #ccc;
+    border-radius: 7rem/@base;
+
+    .itemBox {
+
+        .item>a{
+            display: block;
+            padding-left: 30rem/@base;
+            height: 80rem/@base;
+            line-height: 80rem/@base;
+            border-bottom: 1rem/@base solid #ccc;
+        }
+
+        .subBox {
+            background-color: #f9f9f9;
+            overflow: hidden;
+            display: none;
+
+            .subItem {
+                width: 33.3%;
+                border-right: 1rem/@base solid #ccc;
+                border-bottom: 1rem/@base solid #ccc;
+                height: 80rem/@base;
+                line-height: 80rem/@base;
+                text-align: center;
+                font-size: 24rem/@base;
+                color: #333;
+                float: left;
+                a {
+                    display: block;
+                }
+            }
+            .subItem:nth-child(3n){
+                border-right: none;
+            }
+        }
+        .hide {
+            display: none;
+        }
+    }
+}
