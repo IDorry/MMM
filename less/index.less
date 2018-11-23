@@ -1,0 +1,260 @@
+@import "normalize";
+@import "base";
+@import "vairable";
+
+
+button, input {
+    border: none;    
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+}
+
+// 头部
+.mmb_header {
+    height: 90rem/@base;
+    background-color: @mainColor;
+    overflow: hidden;
+
+    .logo {
+        padding: 20rem/@base;
+        img {
+            height: 50rem/@base;
+            width: auto;
+        }
+    }
+
+    .app {        
+        padding: 12rem/@base;
+        img {
+            height: 68rem/@base;
+            width: 68rem/@base;
+        }
+    }
+}
+
+// 搜索
+.mmb_search {
+    height: 103rem/@base;
+    background-color: #fff;
+    margin-bottom: 20rem/@base;
+    padding: 20rem/@base;
+
+    .input {
+        
+        width: 500rem/@base;
+        height: 60rem/@base;
+        input {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #f1f1f1;
+            border-radius: 30rem/@base;
+            padding: 0;
+            padding-left: 40rem/@base;
+            text-align: left;
+            font-size: 24rem/@base;
+        }
+    }
+    .button {
+        height: 60rem/@base;        
+        width: 125rem/@base;
+        input {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 30rem/@base;
+            background-color: @mainColor;
+            color: #fff;
+            text-align: center;
+            font-size: 24rem/@base;
+            padding: 0;
+        }
+
+    }
+}
+
+
+// 导航
+.mmb_nav {
+    // height: 560rem/@base;
+    background-color: #fff;
+    padding-top: 40rem/@base;
+    margin-bottom: 12rem/@base;
+    ul {
+
+        li {
+            float: left;
+            width: 25%;
+            a {
+                margin-top: 20rem/@base;
+                display: block;
+                img {
+                    width: 100rem/@base;
+                    height: 100rem/@base;
+                    margin: 0 auto;
+                }
+                p {
+                    text-align: center;
+                    font-size: 22rem/@base;
+                    color: #000;
+                    padding: 15rem/@base 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+.hide {
+    display: none;
+}
+
+// 推荐
+.mmb_recommend {
+    background-color: #fff;
+    margin-bottom: 20rem/@base;
+    .title {
+        height: 70rem/@base;
+        line-height: 70rem/@base;
+        background-image: linear-gradient(to bottom, #ffad42, #ff9307);
+        padding: 0 20rem/@base;
+        p {
+            font-size: 32rem/@base; 
+            color: #fff;           
+        }
+        .icon_right {
+            background: url(../images/more.png) no-repeat;
+            width: 40rem/@base;
+            height: 40rem/@base;
+            background-size: 40rem/@base 40rem/@base;
+            margin-top: 18rem/@base;
+        }
+    }
+
+    .recom_content {
+         
+        .item {
+            padding: 30rem/@base 0;
+            height: 260rem/@base;
+            border-bottom: 1rem/@base solid #e7e7e7;
+            a {
+                display: block;
+                .img {
+                    width: 200rem/@base;
+                }
+
+                .desc {
+                    width: 540rem/@base;
+                    padding: 0 30rem/@base;
+                    .top {
+                        line-height: 40rem/@base;
+                        font-size: 28rem/@base;
+                        margin-bottom: 60rem/@base;
+                        span {
+                            display: block;
+                            margin-bottom: 10rem/@base;
+                        }
+                        .colff6c00 {
+                            color: @mainColor;
+                        }
+                    }
+                    .bottom {
+                        font-size: 20rem/@base;
+                        color: #a1a1a1;
+                    }
+                }
+            }
+        }
+    }
+
+    .more {
+        padding-top: 20rem/@base;
+        a {
+            display: block;
+            margin: 0 auto;
+            width: 710rem/@base;
+            height: 60rem/@base;
+            line-height: 60rem/@base;
+            text-align: center;
+            border: 2rem/@base solid #ccc;
+            background-image: linear-gradient(to bottom, #fff, #ddd);
+            font-size: 22rem/@base;
+        }
+    }
+}
+
+
+// 品牌
+.mmb_brand {
+    height: 70rem/@base;
+    line-height: 70rem/@base;
+    background-image: linear-gradient(to bottom, #ffad42, #ff9307);
+    padding: 0 20rem/@base;
+    margin-bottom: 50rem/@base;
+    p {
+        font-size: 32rem/@base; 
+        color: #fff;           
+    }
+    .icon_right {
+        background: url(../images/more.png) no-repeat;
+        width: 40rem/@base;
+        height: 40rem/@base;
+        background-size: 40rem/@base 40rem/@base;
+        margin-top: 18rem/@base;
+    }
+}
+
+
+// 底部
+.mmb_footer {
+    .top {
+        border-top: 1rem/@base solid #c4c4c4;
+        text-align: center;
+        overflow: hidden;
+        a {
+            display: block;
+            float: left;
+            width: 33.3%;
+            height: 68rem/@base;
+            border-right: 1rem/@base solid #c4c4c4;
+            line-height: 68rem/@base;
+            font-size: 25rem/@base;
+            position: relative;
+            .img {
+                position: absolute;
+                top:18rem/@base;
+                left: 35rem/@base;
+                width: 30rem/@base;
+                height: 30rem/@base;
+                background-image: url(../images/top.jpg);
+                background-size: 30rem/@base 30rem/@base;
+            }
+        }
+        .toTop {
+            border-right: none;
+        }
+    }
+
+    .bottom {
+        border-top: 1rem/@base solid #c4c4c4;
+        padding: 15rem/@base 0;
+        text-align: center;
+        .downApp {
+    
+          .colred {
+            color: red;
+          }
+        }
+        .col666{
+          color: #666;
+        }
+      }
+}
+
+
