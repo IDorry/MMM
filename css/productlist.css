@@ -225,3 +225,117 @@ img {
   display: block;
   width: 100%;
 }
+.mmb_productlist .title {
+  height: 1rem;
+  background-image: linear-gradient(to bottom, #fefefe, #ececec);
+  border-bottom: 0.01333333rem solid #d4d4d4;
+  border-top: 0.01333333rem solid #d4d4d4;
+  padding: 0 0.2rem;
+  font-size: 0.33333333rem;
+}
+.mmb_productlist .title .three {
+  height: 100%;
+  line-height: 1rem;
+}
+.mmb_productlist .title .btn {
+  width: 1.66666667rem;
+  height: 0.8rem;
+}
+.mmb_productlist .title .btn .select {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #dadada, #fafafa);
+  border: 0.01333333rem solid #d4d4d4;
+  box-shadow: 0.01333333rem 0.02666667rem 0.04rem #cccccc;
+  border-radius: 0.13333333rem;
+  margin-top: 0.10666667rem;
+  text-align: center;
+  font-size: 0.33333333rem;
+  padding: 0;
+}
+.mmb_productlist .proItem {
+  padding: 0.4rem 0;
+  height: 3.46666667rem;
+  border-bottom: 0.01333333rem solid #e7e7e7;
+  background-color: #fff;
+}
+.mmb_productlist .proItem a {
+  display: block;
+}
+.mmb_productlist .proItem a .img {
+  width: 2.13333333rem;
+  height: 2.13333333rem;
+  padding-left: 0.26666667rem;
+}
+.mmb_productlist .proItem a .img img {
+  width: 100%;
+  height: 100%;
+}
+.mmb_productlist .proItem a .desc {
+  width: 7.2rem;
+  padding: 0 0.4rem;
+}
+.mmb_productlist .proItem a .desc .top {
+  line-height: 0.53333333rem;
+  font-size: 0.37333333rem;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+.mmb_productlist .proItem a .desc .top span {
+  display: block;
+  margin-bottom: 0.13333333rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.mmb_productlist .proItem a .desc .bottom {
+  font-size: 0.26666667rem;
+  color: #a1a1a1;
+}
+.mmb_productlist .proItem a .desc .bottom .price {
+  color: #ff841d;
+  font-size: 0.37333333rem;
+  margin-bottom: 0.13333333rem;
+  line-height: 0.37333333rem;
+}
+.mmb_productlist .proItem a .desc .bottom span {
+  margin-right: 0.2rem;
+}
+.mmb_productlist .paging {
+  height: 1.6rem;
+  padding: 0.26666667rem 0.53333333rem;
+}
+.mmb_productlist .paging .mui-pager a {
+  width: 2.13333333rem;
+  height: 0.86666667rem;
+  line-height: 0.66666667rem;
+  display: block;
+  font-size: 0.37333333rem;
+}
+.mmb_productlist .paging .mui-pager .currPage {
+  font-size: 0.37333333rem;
+  position: relative;
+}
+.mmb_productlist .paging .mui-pager .currPage span {
+  width: 2rem;
+  height: 0.86666667rem;
+  line-height: 0.66666667rem;
+}
+.mmb_productlist .paging .mui-pager .currPage ul {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  z-index: 999;
+  border: 0.01333333rem solid #cccccc;
+  border-top: none;
+  display: none;
+}
+.mmb_productlist .paging .mui-pager .currPage ul li {
+  display: block;
+  width: 2rem;
+  height: 0.86666667rem;
+  text-align: center;
+  line-height: 0.86666667rem;
+}
