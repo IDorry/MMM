@@ -1,0 +1,127 @@
+@import "normalize";
+@import "base";
+@import "vairable";
+
+
+.mmb_header {
+    text-align: center;
+    .back {
+        a {
+            display: block;
+            background: url(../images/icback.svg) no-repeat;
+            width: 88rem/@base;
+            height: 88rem/@base;
+            padding: 20rem/@base;
+            background-clip: content-box;
+            background-origin: content-box;
+        }
+    }
+    h3 {display: inline-block;
+        color: #fff;
+        font-size: 38rem/@base;
+        line-height: 88rem/@base;
+        margin: 0;
+    }
+}
+
+
+
+.mmb_moneyctrl {
+
+
+    // 商品
+    .ctrlItem {
+        padding: 30rem/@base 0;
+        height: 260rem/@base;
+        border-bottom: 1rem/@base solid #e7e7e7;
+        background-color: #fff;
+        a {
+            display: block;
+            .img {
+                width: 160rem/@base;
+                height: 160rem/@base;
+                padding-left: 20rem/@base;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .desc {
+                width: 540rem/@base;
+                padding: 0 30rem/@base;
+                .text {
+                    line-height: 40rem/@base;
+                    font-size: 28rem/@base;
+                    margin-bottom: 40rem/@base;
+                    color: #333;
+                    // 多行溢出显示省略号
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+
+
+                    span {
+                        color: @mainColor;
+                    }
+                }
+                .bottom {
+                    font-size: 20rem/@base;
+                    color: #a1a1a1;
+                
+                    span {
+                        margin-right: 15rem/@base;
+                    }
+                }
+            }
+        }
+    }
+    
+    .paging {
+        height: 120rem/@base;
+        padding: 20rem/@base 40rem/@base;
+
+        .mui-pager {
+
+            a {
+                width: 160rem/@base;
+                height: 65rem/@base;
+                line-height: 50rem/@base;
+                display: block;
+                font-size: 28rem/@base;
+
+            }
+
+            .currPage {
+                font-size: 28rem/@base;
+                position: relative;
+                span {
+                    width: 150rem/@base;
+                    height: 65rem/@base;
+                    line-height: 50rem/@base;
+                }
+                .morePage {
+                    position: absolute;
+                    background-color: #fff;
+                    left: 0;
+                    bottom: 65rem/@base;
+                    z-index: 999;
+                    border: 1rem/@base solid #ccc;
+                    border-top: none;  
+                    // display: none;              
+                    li {
+                        display: block;
+                        width: 150rem/@base;
+                        height: 65rem/@base;
+                        text-align: center;
+                        line-height: 65rem/@base;
+                    }
+                }
+            }
+        }
+    }
+
+}
+

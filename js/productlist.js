@@ -50,7 +50,9 @@ $(function(){
                 var htmlStr = template("pageCount", {pageCount: pageCount});
                 $('.currPage .morePage').html( htmlStr );
 
-
+                // 页数
+                $('.currPage span').text( currentPage+"/"+pageCount );
+                
             }
         });
     }
@@ -67,7 +69,9 @@ $(function(){
 
   //点击下一页按钮，将当前页数+1，重新渲染页面
     $next.on("click", function(){
+        $('.currPage span').text( currentPage+"/"+pageCount );
         currentPage++;
+        
         // console.log(currentPage);
         // console.log(pageCount);
         if( currentPage >= pageCount ){
@@ -84,6 +88,7 @@ $(function(){
         // console.log(pageCount);
         if( currentPage <= 0 ){
             currentPage = 1;
+            $('.currPage span').text( currentPage+"/"+pageCount );            
             // $(this).toggleClass("mui-disabled").next(".prev").toggleClass("mui-disabled");            
         }
         render( currentPage );
