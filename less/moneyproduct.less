@@ -1,0 +1,203 @@
+@import "normalize";
+@import "base";
+@import "vairable";
+
+
+.mmb_header {
+    text-align: center;
+    .back {
+        a {
+            display: block;
+            background: url(../images/icback.svg) no-repeat;
+            width: 88rem/@base;
+            height: 88rem/@base;
+            padding: 20rem/@base;
+            background-clip: content-box;
+            background-origin: content-box;
+        }
+    }
+    h3 {display: inline-block;
+        color: #fff;
+        font-size: 38rem/@base;
+        line-height: 88rem/@base;
+        margin: 0;
+    }
+}
+
+
+.mmb_moneyproduct {
+    padding: 0 20rem/@base;
+    background-color: #fff;
+    h3 {
+        font-size: 35rem/@base;
+        color: #585d65;
+        line-height: 40rem/@base;
+        padding: 40rem/@base 120rem/@base 40rem/@base 0;
+        margin: 0;
+    }
+    .subtitle {
+        color: #9ca7a2;
+        font-size: 20rem/@base;
+    }
+    .content {
+        padding-top: 50rem/@base;
+        padding-bottom: 40rem/@base;
+
+        p {
+            font-size: 30rem/@base;
+            line-height: 45rem/@base;
+            color: #555966;
+        }
+        img:first-child {
+            float: right;
+            width: 350rem/@base;
+            height: 350rem/@base;
+        }
+    }
+    
+}
+
+// 订单城市渲染和评论等额外内容
+.mmb_extra {
+    background-color: #fff;
+
+    #disstorck {
+        background-color: #fff;
+        width: 270rem/@base;
+        margin: 0 auto;
+        box-shadow: 1rem/@base 2rem/@base 8rem/@base #666;
+        padding: 0 20rem/@base 10rem/@base 20rem/@base;
+        margin-bottom: 40rem/@base;
+        li {
+
+            a {
+                display: block;
+                text-decoration: none;
+                width: 100%;
+                height: 40rem/@base;
+                line-height: 40rem/@base;
+                border-bottom: 1rem/@base dashed #ccc;
+                font-size: 22rem/@base;
+                padding: 0 20rem/@base;
+                span {
+                    display: block;
+                    width: 100%;
+                    color: #000;
+                    position: relative;
+                    strong {
+                        color: #ef7c17;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .goLink {
+        width: 666rem/@base;
+        background-color: #ff9000;
+        margin: 0 auto;
+        text-align: center;
+        height: 60rem/@base;
+        line-height: 60rem/@base;
+        border-radius: 10rem/@base;
+        color: #fff;
+        font-size: 30rem/@base;
+        margin-bottom: 90rem/@base;
+    }
+
+    .wechatCode {
+        padding: 0 20rem/@base;
+        margin-bottom: 60rem/@base;
+    }
+
+    .cu-content-pl {
+        width: 100%;
+
+        .tit {
+            padding-left: 17rem/@base;
+            font-size: 30rem/@base;
+            margin-bottom: 30rem/@base;
+        }
+
+        .reply {
+            padding: 0 20rem/@base;
+            .form {
+                width: 695rem/@base;
+                height: 215rem/@base;
+                border: 1rem/@base solid #999;
+                border-radius: 10rem/@base;
+                overflow: hidden;
+                position: relative;
+                margin-bottom: 35rem/@base;
+
+                .ctrl {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    height: 75rem/@base;
+                    width: 695rem/@base;
+                    text-align: right;
+                    background-color: #fbfbfb;
+                    font-size: 32rem/@base;
+                    color: #fff;
+                    border-top: 1rem/@base solid #ccc;
+                    input {
+                        height: 75rem/@base;
+                        background-color: #ff841d;
+                        border: none;
+                    }
+                }
+
+                
+            }
+        }
+
+        .list {
+            width: 100%;
+            padding: 25rem/@base 20rem/@base;
+            ul {
+                width: 100%;
+                li {
+                    width: 100%;
+                    overflow: hidden;
+                    .userimg {
+                        width: 80rem/@base;
+                        height: 80rem/@base;
+                        float: left;
+                        margin-right: 20rem/@base;
+                        img {
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .con {
+                        width: 100%;
+                        padding-left: 100rem/@base;
+                        .name {
+                            width: 100%;
+                            overflow: hidden;
+                            .username {
+                                float: left;
+                                font-size: 24rem/@base;
+                                color: #a2bfe0;
+                                margin-bottom: 10rem/@base;
+                            }
+                            .time {
+                                float: right;
+                                display: block;
+                                font-size: 15rem/@base;
+                            }
+                        }
+
+                        .content {
+                            font-size: 28rem/@base;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
