@@ -135,16 +135,67 @@
         }
     }
 
-    // 评论
-    .mmb_evaluate {
-        border-top: 4rem/@base solid #6e6e6e;
-        height: 1000rem/@base;
-        .evaTop {
-            height: 70rem/@base;
-            text-align: center;
-            font-size: 25rem/@base;
-            width: 100%;
-            background-color: #dbdbdb;
+    
+}
+
+
+
+
+// 评论
+.mmb_evaluate {
+    border-top: 4rem/@base solid #6e6e6e;
+
+    .evaTop {
+        height: 70rem/@base;
+        line-height: 70rem/@base;
+        text-align: center;
+        font-size: 25rem/@base;
+        font-weight: bold;
+        background-color: #dbdbdb;
+    }
+
+    .comBox {
+        background-color: #fff;
+        font-size: 20rem/@base;
+
+        .comList {
+            border-bottom: 1rem/@base solid #ccc;
+
+            .comTitle {
+                height: 105rem/@base;
+                padding: 15rem/@base;
+                position: relative;
+                color: #666;
+
+                .comFrom {
+                    position: absolute;
+                    bottom: 0;
+                    right: 15rem/@base;
+                }
+            }
+            .comContent {
+                padding: 15rem/@base;
+                line-height: 30rem/@base;
+            }
         }
+    }
+}
+
+// 更多
+.mmb_moreCom {
+    height: 148rem/@base;
+    background-color: #fff;
+    padding: 30rem/@base 15rem/@base 45rem/@base;
+
+    .moreCom {
+        display: block;
+        width: 715rem/@base;
+        height: 60rem/@base;
+        background-image: linear-gradient(to bottom, #ededed, #d7d7d7);
+        box-shadow: 1rem/@base 2rem/@base 5rem/@base #333;
+        font-size: 30rem/@base;
+        text-align: center;
+        line-height: 60rem/@base;
+        font-weight: bold;
     }
 }

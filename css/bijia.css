@@ -341,14 +341,52 @@ img {
   font-size: 0.29333333rem;
   padding: 0.26666667rem 0.53333333rem 0 0.26666667rem;
 }
-.mmb_bijia .mmb_evaluate {
+.mmb_evaluate {
   border-top: 0.05333333rem solid #6e6e6e;
-  height: 13.33333333rem;
 }
-.mmb_bijia .mmb_evaluate .evaTop {
+.mmb_evaluate .evaTop {
   height: 0.93333333rem;
+  line-height: 0.93333333rem;
   text-align: center;
   font-size: 0.33333333rem;
-  width: 100%;
+  font-weight: bold;
   background-color: #dbdbdb;
+}
+.mmb_evaluate .comBox {
+  background-color: #fff;
+  font-size: 0.26666667rem;
+}
+.mmb_evaluate .comBox .comList {
+  border-bottom: 0.01333333rem solid #cccccc;
+}
+.mmb_evaluate .comBox .comList .comTitle {
+  height: 1.4rem;
+  padding: 0.2rem;
+  position: relative;
+  color: #666;
+}
+.mmb_evaluate .comBox .comList .comTitle .comFrom {
+  position: absolute;
+  bottom: 0;
+  right: 0.2rem;
+}
+.mmb_evaluate .comBox .comList .comContent {
+  padding: 0.2rem;
+  line-height: 0.4rem;
+}
+.mmb_moreCom {
+  height: 1.97333333rem;
+  background-color: #fff;
+  padding: 0.4rem 0.2rem 0.6rem;
+}
+.mmb_moreCom .moreCom {
+  display: block;
+  width: 9.53333333rem;
+  height: 0.8rem;
+  background-image: linear-gradient(to bottom, #ededed, #d7d7d7);
+  box-shadow: 0.01333333rem 0.02666667rem 0.06666667rem #333333;
+  font-size: 0.4rem;
+  text-align: center;
+  line-height: 0.8rem;
+  font-weight: bold;
 }
