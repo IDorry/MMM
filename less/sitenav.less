@@ -1,0 +1,60 @@
+@import "normalize";
+@import "base";
+@import "vairable";
+
+
+.mmb_header {
+    text-align: center;
+    .back {
+        a {
+            display: block;
+            background: url(../images/icback.svg) no-repeat;
+            width: 88rem/@base;
+            height: 88rem/@base;
+            padding: 20rem/@base;
+            background-clip: content-box;
+            background-origin: content-box;
+        }
+    }
+    h3 {display: inline-block;
+        color: #fff;
+        font-size: 38rem/@base;
+        line-height: 88rem/@base;
+        margin: 0;
+    }
+}
+
+
+// 商城链接
+.mmb_sitenav {
+
+    background-color: #fff;
+    .navBox {
+        padding-left: 85rem/@base;
+        padding-top: 20rem/@base;
+        padding-bottom: 60rem/@base;
+        overflow: hidden;
+        .navList {
+            padding: 6rem/@base;
+            float: left;
+            a {
+                border: 1rem/@base solid #333;
+                display: block;
+                height: 90rem/@base;
+                line-height: 90rem/@base;
+                background-color: #f4f4f4;
+                padding: 0 70rem/@base;
+                position: relative;
+                font-size: 32rem/@base;
+                img {
+                    position: absolute;
+                    left: 16rem/@base;
+                    top: 50%;
+                    margin-top: -17rem/@base;
+                    width: 35rem/@base;
+                    height: 35rem/@base;
+                }                
+            }
+        }
+    }
+}
