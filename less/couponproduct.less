@@ -1,0 +1,138 @@
+@import "normalize";
+@import "base";
+@import "vairable";
+
+
+.mmb_header {
+    text-align: center;
+    background-color: #f4483e;
+    .back {
+        a {
+            display: block;
+            background: url(../images/icback.svg) no-repeat;
+            width: 88rem/@base;
+            height: 88rem/@base;
+            padding: 20rem/@base;
+            background-clip: content-box;
+            background-origin: content-box;
+        }
+    }
+    h3 {
+        display: inline-block;
+        color: #fff;
+        font-size: 38rem/@base;
+        line-height: 88rem/@base;
+        margin: 0;
+    }
+}
+
+
+// 商品列表
+.mmb_couponProduct {
+    background-color: #fff;
+    .beforeTip {
+        text-align: center;
+        line-height: 45rem/@base;
+        margin-bottom: 0;
+        font-size: 22rem/@base;
+    }
+    .couproBox {
+
+        .couproList {
+            padding: 30rem/@base 0;
+            height: 260rem/@base;
+            border-bottom: 1rem/@base solid #e7e7e7;
+            position: relative;
+            a {
+                display: block;
+                overflow: hidden;
+                .img {
+                    float: left;
+                    width: 200rem/@base;
+                    height: 160rem/@base;
+                    padding-left: 20rem/@base;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+        
+                .desc {
+                    float: left;
+                    width: 540rem/@base;
+                    padding: 0 30rem/@base;
+                    .title {
+                        line-height: 40rem/@base;
+                        font-size: 28rem/@base;
+                        color: #333;
+                        // 多行溢出显示省略号
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+        
+                    }
+                    .price {
+                        font-size: 30rem/@base;
+                        color: #000;
+                        font-weight: bold;
+                    }
+                    .deadTime {
+                        margin-bottom: 30rem/@base;
+                        color: @mainColor;
+                        font-size: 22rem/@base;
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+
+                .arrow_right {
+                    position: absolute;
+                    bottom: 45rem/@base;
+                    right: 45rem/@base;
+                    background: url("../images/arrow-right.svg") no-repeat;
+                    width: 45rem/@base;
+                    height: 45rem/@base;
+                    background-color: pink;
+                }
+            }
+        }
+    }
+}
+
+
+// 模态框
+.mmb_mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+
+    .mask_img {
+        position: absolute;
+        transform: translateY(50%);
+        left: 50%;
+        margin-left: -150rem/@base;
+        width: 300rem/@base;
+        height: 300rem/@base;
+        img {
+            width: 100%;
+            height: 100%;
+            
+        }
+        i {
+            position: absolute;
+            top: 20rem/@base;
+            right: 20rem/@base;
+            width: 26rem/@base;
+            height: 26rem/@base;
+            background-image: url(../images/icon_bar.png);
+            background-size: 440rem/@base 264rem/@base;
+            background-position: -360rem/@base -30rem/@base;
+        }
+    }
+}

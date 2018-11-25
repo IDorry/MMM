@@ -1,0 +1,58 @@
+@import "normalize";
+@import "base";
+@import "vairable";
+
+
+.mmb_header {
+    text-align: center;
+    background-color: #f4483e;
+    .back {
+        a {
+            display: block;
+            background: url(../images/icback.svg) no-repeat;
+            width: 88rem/@base;
+            height: 88rem/@base;
+            padding: 20rem/@base;
+            background-clip: content-box;
+            background-origin: content-box;
+        }
+    }
+    h3 {
+        display: inline-block;
+        color: #fff;
+        font-size: 38rem/@base;
+        line-height: 88rem/@base;
+        margin: 0;
+    }
+}
+
+
+// 优惠券列表
+.mmb_coupon {
+
+    background-color: #fff;
+    .couponBox {
+        overflow: hidden;
+        padding: 24rem/@base 6rem/@base;
+
+        .couponList {
+            float: left;
+            width: 33.3%;
+            padding: 6rem/@base;
+
+            a {
+                display: block;
+                width: 100%;
+                border: 1rem/@base solid #ccc;
+                img {
+                    width: 100rem/@base;
+                    margin: 0 auto;
+                }
+                p {
+                    text-align: center;
+                    font-size: 24rem/@base;
+                }
+            }
+        }
+    }
+}
