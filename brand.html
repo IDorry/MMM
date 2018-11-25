@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/brand.css">
+    <title>比价搜索</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- 头部 -->
+        <div class="mmb_header mui-clearfix">
+            <div class="logo mui-pull-left">
+                <a href="#">
+                    <img src="./images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="app mui-pull-right">
+                <img src="./images/header_app.png" alt="">
+            </div>
+        </div>
+
+        <!-- 搜索 -->
+        <div class="mmb_search mui-clearfix">
+            <div class="input mui-pull-left">
+                <input type="search" name="" id="" placeholder="请输入你想比价的商品">
+            </div>
+            <div class="button mui-pull-right">
+                <input type="button" value="搜索">
+            </div>
+        </div>
+
+        <!-- 二级导航 -->
+        <div class="mmb_topMenu">
+            <a href="index.html">首页</a>
+            <span>></span>
+            <a href="category.html">全部分类</a>
+            <span>></span>
+        </div>
+
+        <!-- 分类 -->
+        <div class="mmb_brandTitle">
+            <div class="title">平板电视哪个牌子好</div>
+            <ul class="brandBox">
+                <!-- <li class="brandList">
+                    <a href="#">
+                        <div class="rank">1</div>
+                        <div class="desc">
+                            <p>三星平板电视</p>
+                            <p>30天全网销售：242408件</p>
+                        </div>
+                        <i></i>
+                    </a>
+                </li> -->
+                <!-- 挖个坑 -->
+            </ul>
+        </div>
+
+        <!-- 销售 -->
+        <div class="mmb_saleRank">
+            <div class="title">平板电视产品销量排行</div>
+            <ul class="saleBox">
+                <!-- <li class="saleList">
+                    <a href="bijia.html">
+                        <div class="img">
+                            <img src="./images/tv.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <p>乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</p>
+                            <div class="center">
+                                <span class="price">￥3266.00</span>
+                                <span class="star"></span>
+                            </div>
+                            <div class="bottom">
+                                <span>报价(6)</span>
+                                <span>评论(3522)</span>
+                            </div>
+                        </div>
+                    </a>
+                </li> -->
+
+                <!-- 挖个坑 -->
+            </ul>
+        </div>
+
+        <!-- 评论 -->
+        <div class="mmb_newCom">
+            <div class="title">平板电视最新评论</div>
+            <ul class="comBox">
+                <!-- <li class="comList">
+                    <div class="comTop">
+                        <div class="img">
+                            <img src="./images/tv.png" alt="">
+                        </div>
+                        <p>乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</p>
+                    </div>
+
+                    <div class="comCon">
+                        <div class="comHeader">
+                            g***n:
+                            <span class="star"></span>
+                            <span class="time">2019/2/2</span>
+                        </div>
+                        <div class="comment">
+                                外观：精工细作，颜值再度提高作为一台55寸的大电视
+                        </div>
+                    </div>
+                </li> -->
+
+                <!-- 挖个坑 -->
+            </ul>
+        </div>
+
+        <!-- 底部 -->
+        <div class="mmb_footer">
+            <div class="top">
+                <a href="login.html">登录</a>
+                <a href="reg.html">注册</a>
+                <a href="#" class="toTop">
+                    <i class="img"></i>
+                    返回顶部
+                </a>
+            </div>
+            <div class="bottom">
+                <p class="downApp">
+                    <a href="#" class="colred">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <a href="#" class="col666">--掌上比价平台</a>
+                </p>
+                <p class="col666">m.manmanbuy.com</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+   <!-- -------------------------------------模板-------------------------------------------- -->
+   
+   <!-- 十大排名品牌 -->
+   <script type="text/html" id="brandlist">
+    {{ each result v i }}
+        <li class="brandList">
+            <a href="#">
+                <div class="rank">{{ i+1 }}</div>
+                <div class="desc">
+                    <p>{{ v.brandName }}</p>
+                    <p>{{ v.brandInfo }}</p>
+                </div>
+                <i></i>
+            </a>
+        </li>
+    {{ /each }}
+
+</script>
+
+
+<!-- 商品列表 -->
+<script type="text/html" id="salelist">
+    {{ each result v i }}
+        <li class="saleList">
+            <a href="bijia.html" data-productid="{{v.productId}}">
+                <div class="img">
+                    {{@v.productImg}}
+                </div>
+                <div class="desc">
+                    <p>{{ v.productName }}</p>
+                    <div class="center">
+                        <span class="price">{{ v.productPrice }}</span>
+                        <span class="star"></span>
+                    </div>
+                    <div class="bottom">
+                        <span>{{ v.productQuote }}</span>
+                        <span>{{ v.productCom }}</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    {{ /each }}
+</script>
+
+
+<!-- 评论 -->
+<script type="text/html" id="comlist">
+    {{ each result v i }}
+        <li class="comList">
+            <div class="comTop">
+                <div class="img">
+                    <img src="./images/tv.png" alt="">
+                </div>
+                <p>乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</p>
+            </div>
+
+            <div class="comCon">
+                <div class="comHeader">
+                    {{ v.comName }}
+                    <span class="star"></span>
+                    <span class="time">{{ v.comTime }}</span>
+                </div>
+                <div class="comment">
+                     {{ v.comContent }}
+                </div>
+            </div>
+        </li>
+    {{ /each }}
+</script>
+
+
+
+
+
+
+    <!-- 引包 -->
+    <script src="./lib/flexible.js"></script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/brand.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+@import "normalize";
+@import "base";
+@import "vairable";
+
+
+.container {
+    background-color: #fff;
+}
+
+
+// 导航
+.mmb_topMenu {
+    height: 75rem/@base;
+    background-image: linear-gradient(to bottom, #fdfdfd, #ececec);
+    border-top: 1rem/@base solid #ccc;
+    border-bottom: 1rem/@base solid #ccc;
+    margin-bottom: 20rem/@base;
+    line-height: 75rem/@base;
+    padding-left: 18rem/@base;
+    font-size: 30rem/@base;
+}
+
+
+// 分类列表
+.mmb_brandTitle {
+    background-color: #fff;
+    
+    .title {
+        height: 80rem/@base;
+        line-height: 80rem/@base;
+        padding-left: 20rem/@base;
+        font-size: 28rem/@base;
+        color: #a45c16;
+        background-color: #eee;
+        border-top: 1rem/@base solid #ccc; 
+      
+    }
+    .brandBox {
+        background-color: #fff;
+        border-top: 1rem/@base solid #ccc;
+        border-bottom: 1rem/@base solid #ccc;
+        border-radius: 7rem/@base;
+        .brandList {            
+            height: 130rem/@base;
+            padding-left: 20rem/@base;
+            padding-right: 20rem/@base;
+            font-size: 28rem/@base;
+            border-bottom: 1rem/@base solid #ccc;
+            position: relative;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                padding-top: 25rem/@base;
+                .rank {
+                    position: absolute;
+                    top: 25rem/@base;
+                    left: 0;
+                    width: 40rem/@base;
+                    height: 40rem/@base;
+                    line-height: 40rem/@base;
+                    color: #fff;
+                    background-color: #c9c9c9;
+                    font-size: 30rem/@base;
+                    text-align: center;
+                }
+                .desc {
+                    padding-left: 60rem/@base;
+                    p:first-child {
+                        font-size: 30rem/@base;
+                        color: #333;
+                        margin-bottom: 0;
+                    }
+                    p:last-child {
+                        font-size: 25rem/@base;
+                        color: #999;
+                        margin-bottom: 0;
+                        line-height: 48rem/@base;
+                    }
+                }
+                i {
+                    position: absolute;
+                    right: 30rem/@base;
+                    top: 50%;
+                    margin-top: -25rem/@base;
+                    width: 30rem/@base;
+                    height: 50rem/@base;
+                    background: url(../images/icon_bar.png) no-repeat;
+                    background-position: -200rem/@base -21rem/@base;
+                    background-size: 440rem/@base 264rem/@base;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .brandList:nth-child(1) {
+            .rank {
+                background-color: red;                
+            }
+        }
+        .brandList:nth-child(2) {
+            .rank {
+                background-color: orange;                
+            }
+        }
+        .brandList:nth-child(3) {
+            .rank {
+                background-color: greenyellow;                
+            }
+        }
+    }
+}
+
+
+// 销售
+.mmb_saleRank {
+
+    .title {
+        height: 80rem/@base;
+        background-color: #f3f3f3;
+        border-top: 1rem/@base solid #ccc;
+        border-bottom: 1rem/@base solid #ccc;
+        color: #7f2e13;
+        line-height: 80rem/@base;
+        padding-left: 20rem/@base;
+        font-size: 25rem/@base;
+        font-weight: bold;
+    }
+
+    .saleList {
+        padding: 30rem/@base 0;
+        height: 260rem/@base;
+        border-bottom: 1rem/@base solid #e7e7e7;
+        background-color: #fff;
+        a {
+            display: block;
+            .img {
+                width: 160rem/@base;
+                height: 160rem/@base;
+                float: left;
+                padding-left: 20rem/@base;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .desc {
+                padding-left: 180rem/@base;
+                padding-right: 30rem/@base;
+                width: 100%;
+                p {
+                    line-height: 40rem/@base;
+                    font-size: 28rem/@base;
+                    margin-bottom: 30rem/@base;
+                    color: #333;
+                }
+                .center {
+                    overflow: hidden;
+
+                    .price {
+                        float: left;
+                        color: @mainColor;
+                        font-size: 28rem/@base;
+                        margin-bottom: 10rem/@base;
+                        line-height: 28rem/@base;
+                    }
+                    .star {
+                        float: right;
+                        background: url(../images/star.svg) repeat-x;
+                        background-size: 30rem/@base 30rem/@base;
+                        width: 150rem/@base;
+                        height: 30rem/@base;
+                    }
+                }
+                .bottom {
+                    font-size: 20rem/@base;
+                    color: #a1a1a1;
+                    span {
+                        margin-right: 15rem/@base;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+// 评论
+
+.mmb_newCom {
+
+    .title {
+        height: 80rem/@base;
+        background-color: #f3f3f3;
+        border-top: 1rem/@base solid #ccc;
+        border-bottom: 1rem/@base solid #ccc;
+        color: #7f2e13;
+        line-height: 80rem/@base;
+        padding-left: 20rem/@base;
+        font-size: 25rem/@base;
+        font-weight: bold;
+    }
+
+    .comList {
+        padding: 30rem/@base 20rem/@base;
+        border-bottom: 1rem/@base solid #e7e7e7;
+        background-color: #fff;
+        .comTop {
+            overflow: hidden;
+            margin-bottom: 50rem/@base;
+            .img {
+                width: 160rem/@base;
+                height: 160rem/@base;
+                float: left;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p {
+                padding-left: 190rem/@base;
+                line-height: 40rem/@base;
+                font-size: 26rem/@base;
+                margin-bottom: 30rem/@base;
+                color: #999;
+            }
+        }
+
+        .comCon {
+            padding: 30rem/@base 20rem/@base;
+            border: 1rem/@base solid #999;
+            background-color: #f8f8f8;
+            .comHeader {
+                color: green;
+                font-size: 25rem/@base;
+                margin-bottom: 20rem/@base;
+                overflow: hidden;
+                .star {   
+                    display: inline-block;
+                    background: url(../images/star.svg) repeat-x;
+                    background-size: 30rem/@base 30rem/@base;
+                    width: 147rem/@base;
+                    height: 30rem/@base;
+                }
+                .time {
+                    float: right;
+                    font-size: 25rem/@base;
+                    color: #999;
+                }
+            }
+            .comment {
+                font-size: 28rem/@base;
+                line-height: 40rem/@base;
+            }
+        }
+
+        .comCon:before {
+            content: "";
+            
+        }
+    }
+
+
+}
+
