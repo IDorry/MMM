@@ -305,10 +305,12 @@ img {
   position: absolute;
   bottom: 0.6rem;
   right: 0.6rem;
-  background: url("../images/arrow-right.svg") no-repeat;
-  width: 0.6rem;
-  height: 0.6rem;
-  background-color: pink;
+  background: url("../images/icon_bar.png") no-repeat;
+  background-size: 2.93333333rem 1.76rem;
+  background-position: -1.38666667rem -0.13333333rem;
+  width: 0.24rem;
+  height: 0.33333333rem;
+  transform: rotate(180deg);
 }
 .mmb_mask {
   position: fixed;
@@ -321,8 +323,9 @@ img {
 }
 .mmb_mask .mask_img {
   position: absolute;
-  transform: translateY(50%);
+  top: 50%;
   left: 50%;
+  margin-top: -2rem;
   margin-left: -2rem;
   width: 4rem;
   height: 4rem;
@@ -340,4 +343,28 @@ img {
   background-image: url(../images/icon_bar.png);
   background-size: 5.86666667rem 3.52rem;
   background-position: -4.8rem -0.4rem;
+}
+.mmb_mask .arr_left {
+  position: absolute;
+  left: 0.66666667rem;
+  top: 50%;
+  margin-top: -0.26666667rem;
+  background: url("../images/icon_bar.png") no-repeat;
+  background-size: 5.86666667rem 3.52rem;
+  background-position: -3.77333333rem -0.37333333rem;
+  width: 0.66666667rem;
+  height: 0.53333333rem;
+  transform: rotate(270deg);
+}
+.mmb_mask .arr_right {
+  position: absolute;
+  right: 0.66666667rem;
+  top: 50%;
+  margin-top: -0.26666667rem;
+  background: url("../images/icon_bar.png") no-repeat;
+  background-size: 5.86666667rem 3.52rem;
+  background-position: -3.77333333rem -0.37333333rem;
+  width: 0.66666667rem;
+  height: 0.53333333rem;
+  transform: rotate(90deg);
 }

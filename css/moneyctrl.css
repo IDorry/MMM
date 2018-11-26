@@ -311,10 +311,11 @@ img {
   position: absolute;
   background-color: #fff;
   left: 0;
-  bottom: 0.86666667rem;
+  bottom: 0.66666667rem;
   z-index: 999;
   border: 0.01333333rem solid #cccccc;
   border-top: none;
+  display: none;
 }
 .mmb_moneyctrl .paging .mui-pager .currPage .morePage li {
   display: block;

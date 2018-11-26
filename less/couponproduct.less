@@ -91,10 +91,13 @@
                     position: absolute;
                     bottom: 45rem/@base;
                     right: 45rem/@base;
-                    background: url("../images/arrow-right.svg") no-repeat;
-                    width: 45rem/@base;
-                    height: 45rem/@base;
-                    background-color: pink;
+                    background: url("../images/icon_bar.png") no-repeat;
+                    background-size: 220rem/@base 132rem/@base;
+                    background-position: -104rem/@base -10rem/@base;
+                    width: 18rem/@base;
+                    height: 25rem/@base;
+                    transform: rotate(180deg);
+                    // background-color: pink;
                 }
             }
         }
@@ -114,8 +117,9 @@
 
     .mask_img {
         position: absolute;
-        transform: translateY(50%);
+        top: 50%;
         left: 50%;
+        margin-top: -150rem/@base;
         margin-left: -150rem/@base;
         width: 300rem/@base;
         height: 300rem/@base;
@@ -134,5 +138,32 @@
             background-size: 440rem/@base 264rem/@base;
             background-position: -360rem/@base -30rem/@base;
         }
+    }
+
+
+    .arr_left {
+        position: absolute;
+        left: 50rem/@base;
+        top: 50%;
+        margin-top: -20rem/@base;
+        background: url("../images/icon_bar.png") no-repeat;
+        background-size: 440rem/@base 264rem/@base;
+        background-position: -283rem/@base -28rem/@base;
+        width: 50rem/@base;
+        height: 40rem/@base;
+        transform: rotate(270deg);
+    }
+
+    .arr_right {
+        position: absolute;
+        right: 50rem/@base;
+        top: 50%;
+        margin-top: -20rem/@base;
+        background: url("../images/icon_bar.png") no-repeat;
+        background-size: 440rem/@base 264rem/@base;
+        background-position: -283rem/@base -28rem/@base;
+        width: 50rem/@base;
+        height: 40rem/@base;
+        transform: rotate(90deg);
     }
 }

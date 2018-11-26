@@ -225,11 +225,15 @@ img {
   display: block;
   width: 100%;
 }
+.mmb_search {
+  margin-bottom: 0;
+}
 .mmb_category {
   background-color: #ededed;
   border-top: 0.01333333rem solid #cccccc;
   border-bottom: 0.01333333rem solid #cccccc;
-  border-radius: 0.09333333rem;
+  border-radius: 0.10666667rem;
+  margin-bottom: 0.53333333rem;
 }
 .mmb_category .itemBox .item > a {
   display: block;

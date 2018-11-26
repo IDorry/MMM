@@ -235,6 +235,7 @@
             padding: 30rem/@base 20rem/@base;
             border: 1rem/@base solid #999;
             background-color: #f8f8f8;
+            position: relative;
             .comHeader {
                 color: green;
                 font-size: 25rem/@base;
@@ -258,9 +259,30 @@
                 line-height: 40rem/@base;
             }
         }
-
+        // 三角形
         .comCon:before {
             content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: -20rem/@base;
+            left: 20rem/@base;
+            border-bottom: 20rem/@base solid #999;
+            border-right: 20rem/@base solid transparent;
+            border-left: 20rem/@base solid transparent;
+            
+        }
+        // 三角形填充
+        .comCon:after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: -18rem/@base;
+            left: 22rem/@base;
+            border-bottom: 18rem/@base solid #f8f8f8;
+            border-right: 18rem/@base solid transparent;
+            border-left: 18rem/@base solid transparent;
             
         }
     }

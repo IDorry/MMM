@@ -423,6 +423,7 @@ img {
   padding: 0.4rem 0.26666667rem;
   border: 0.01333333rem solid #999999;
   background-color: #f8f8f8;
+  position: relative;
 }
 .mmb_newCom .comList .comCon .comHeader {
   color: green;
@@ -448,4 +449,23 @@ img {
 }
 .mmb_newCom .comList .comCon:before {
   content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -0.26666667rem;
+  left: 0.26666667rem;
+  border-bottom: 0.26666667rem solid #999999;
+  border-right: 0.26666667rem solid transparent;
+  border-left: 0.26666667rem solid transparent;
+}
+.mmb_newCom .comList .comCon:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -0.24rem;
+  left: 0.29333333rem;
+  border-bottom: 0.24rem solid #f8f8f8;
+  border-right: 0.24rem solid transparent;
+  border-left: 0.24rem solid transparent;
 }
